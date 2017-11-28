@@ -1,19 +1,17 @@
-# Jenkins Exporter
+# OpenAir Exporter
 
-[![Build Status](https://api.travis-ci.org/lovoo/jenkins_exporter.svg?branch=travis_setup)](https://travis-ci.org/lovoo/jenkins_exporter)
-
-Jenkins exporter for prometheus.io, written in python.
+OpenAir exporter for prometheus.io, written in python.
 
 This exporter is based on Robust Perception's python exporter example:
 For more information see (http://www.robustperception.io/writing-a-jenkins-exporter-in-python)
 
 ## Fork
-@dotanga: This is a fork from lovoo/jenkins_exporter that enables filtering certain jobs, instead of getting all jobs from the jenkins server. it is good when the jenkins server has way too many jobs.
+This is a fork from gcmalloc/jenkins_exporter which was forked from lovoo/jenkins_exporter. 
+It's a rewrite to gather JSON data from OpenAir Cloud services.
 
 ## Usage
 
-    jenkins_exporter.py [-h] [-j jenkins] [--user user]
-                        [--password password] [-p port] [--jobsfile file]
+    openair_exporter.py [-h] [--sid sid] [-n function]
 
     optional arguments:
       -h, --help            show this help message and exit
